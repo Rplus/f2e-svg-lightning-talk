@@ -1,0 +1,32 @@
+body {
+    background-color: #ffc;
+}
+
+.logo {
+    width 400px
+    height 200px
+    margin 0 auto
+    text-align center
+    outline 1px solid #ccc
+
+    &::after {
+        content ''
+        display inline-block
+        vertical-align: middle
+        height 200px
+        width 0
+    }
+
+    &::before {
+        inline-block
+        vertical-align: middle
+    }
+
+    appicon('codepen-logo');
+    font-size 200px
+
+
+    @media (min-width: 500px) {
+        appicon('codepen-full');
+    }
+}
