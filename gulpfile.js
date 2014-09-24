@@ -83,7 +83,7 @@ gulp.task('iconfont', ['clean:font'], function () {
       fontName: 'myfont',
       // fixedWidth: true,
       centerHorizontally: true,
-      // normalize: true,
+      normalize: true
     }))
     .on('codepoints', function(codepoints, options) {
       // console.log(codepoints, options);
