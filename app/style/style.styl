@@ -4,7 +4,8 @@ html, body {
 
 body {
     position: relative
-    background-color #ffc;
+    margin 0
+    background-color #333;
 }
 
 .logo {
@@ -13,11 +14,11 @@ body {
     bottom 0
     left 0
     right 0
-    width 400px
+    max-width 400px
     height 200px
     margin auto
     text-align center
-    outline 1px solid #ccc
+    outline 2px solid #444
 
     &::after {
         content ''
@@ -31,6 +32,9 @@ body {
         display inline-block
         vertical-align middle
         font-size 200px
+        outline 1px solid #666
+        background-color #000
+        color: #fff
     }
 
     appicon('disney-SS');
